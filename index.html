@@ -47,7 +47,8 @@
     
     //壁2
     var wall2 = new THREE.Mesh(geometry, material);
-    wall2.position.x = -10;
+    wall2.rotation.set( 0, -Math.PI/1.2, 0 );
+    wall2.position.x = -7;
     wall2.position.z = -10;
     scene.add(wall2);
 
