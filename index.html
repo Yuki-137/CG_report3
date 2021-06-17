@@ -37,13 +37,15 @@
     
     
     // 壁を作成
-    //壁1
     var geometry = new THREE.BoxGeometry(5, 10, 3);
     var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
+    
+    //壁1
     var wall1 = new THREE.Mesh(geometry, material);
-    box.position.z = -5;
+    wall1.position.z = -5;
     scene.add(wall1);
     
+    //壁2
     var wall2 = new THREE.Mesh(geometry, material);
     wall2.position.x = -10;
     wall2.position.z = -10;
