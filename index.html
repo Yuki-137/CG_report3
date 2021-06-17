@@ -35,6 +35,21 @@
     camera.position.set(0, 20, 15);
     const controls = new THREE.OrbitControls(camera,document.body);
     
+    //テクスチャ
+    var textureLoader = new THREE.TextureLoader();
+    
+    //地面のテクスチャ
+    var soil_texture = textureLoader.load("soil.jpg");
+    var mat = new THREE.MeshPhongMaterial();
+    mat.map = soil_texture;
+    
+    //地面を作成
+    var planeGeometry = new THREE.PlaneGeometry(50,50,50,50);
+    var G = new THREE.Mesh(planeGeometry,mat);
+    G.receiveShadow = true;
+    G.rotation.set( -Math.PI/2, 0, 0 );
+    G.position.set(0,-6.5,0);
+    scene.add( G );
     
     // 壁を作成
     var geometry = new THREE.BoxGeometry(5, 10, 3);
