@@ -56,6 +56,7 @@
     
     //壁1
     var wall1 = new THREE.Mesh(geometry, material);
+    wall1.position.y = 5;
     wall1.position.z = -5;
     scene.add(wall1);
     
@@ -63,6 +64,7 @@
     var wall2 = new THREE.Mesh(geometry, material);
     wall2.rotation.set( 0, -Math.PI/-1.2, 0 );
     wall2.position.x = -3.922;
+    wall2.position.y = 5;
     wall2.position.z = -6.05;
     scene.add(wall2);
     
@@ -70,6 +72,7 @@
     var wall3 = new THREE.Mesh(geometry, material);
     wall3.rotation.set( 0, -Math.PI/1.2, 0 );
     wall3.position.x = 3.922;
+    wall3.position.y = 5;
     wall3.position.z = -6.05;
     scene.add(wall3);
 
@@ -77,21 +80,28 @@
     
     // 平行光源1
     var directionalLight1 = new THREE.DirectionalLight(0xffffff);
+    directionalLight1.intensity = 0.8;
     directionalLight1.position.set(1, 1, 1);
     // シーンに追加
     scene.add(directionalLight1);
+    
     // 平行光源2
-        var directionalLight2 = new THREE.DirectionalLight(0xffffff);
+    var directionalLight2 = new THREE.DirectionalLight(0xffffff);
+    directionalLight2.intensity = 0.8;
     directionalLight2.position.set(-1, 1, 1);
     // シーンに追加
     scene.add(directionalLight2);
+    
     // 平行光源3
     var directionalLight3 = new THREE.DirectionalLight(0xffffff);
+    directionalLight3.intensity = 0.8;
     directionalLight3.position.set(1, -1, 1);
     // シーンに追加
     scene.add(directionalLight3);
+    
     // 平行光源4
     var directionalLight4 = new THREE.DirectionalLight(0xffffff);
+    directionalLight4.intensity = 0.8;
     directionalLight4.position.set(1, 1, -1);
     // シーンに追加
     scene.add(directionalLight4);
