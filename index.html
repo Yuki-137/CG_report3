@@ -53,6 +53,12 @@
     var mat3 = new THREE.MeshPhongMaterial();
     mat3.map = cannon_texture;
     
+    //車輪のテクスチャ
+    var wheel_texture = textureLoader.load("wood.jpg");
+    var mat4 = new THREE.MeshLambertMaterial();
+    mat4.map = wheel_texture;
+    
+    
     
     //地面を作成
     var planeGeometry = new THREE.PlaneGeometry(50,50,50,50);
@@ -90,11 +96,19 @@
     
     //大砲系
     //砲身（円柱）
-    var cylinderGeometry = new THREE.CylinderGeometry( 1, 1, 3, 100 );
+    var cylinderGeometry = new THREE.CylinderGeometry( 0.8, 1, 3, 100 );
     var cannon = new THREE.Mesh(cylinderGeometry, mat3);
     cannon.position.y = 5;
     cannon.rotation.set( -Math.PI/1.7,0, 0 );
     scene.add(cannon);
+    
+    //車輪
+    var WG = new THREE.CylinderGeometry( 0.5, 0.15, 3, 100 );
+    var wheel = new THREE.Mesh(WG, mat4);
+    wheel.position.x = 1.2;
+    wheel.position.y = 5;
+    scene.add(wheel);
+    
     
     
 
