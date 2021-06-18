@@ -43,6 +43,11 @@
     var mat = new THREE.MeshLambertMaterial();
     mat.map = soil_texture;
     
+    //壁のテクスチャ
+    var wall_texture = textureLoader.load("stone_wall.jpg");
+    var mat2 = new THREE.MeshLambertMaterial();
+    mat2.map = wall_texture;
+    
     //地面を作成
     var planeGeometry = new THREE.PlaneGeometry(50,50,50,50);
     var G = new THREE.Mesh(planeGeometry,mat);
@@ -53,16 +58,16 @@
     
     // 壁を作成
     var geometry = new THREE.BoxGeometry(5, 10, 3);
-    var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
+    //var material = new THREE.MeshPhongMaterial({ color: 0x0000ff });
     
     //壁1
-    var wall1 = new THREE.Mesh(geometry, material);
+    var wall1 = new THREE.Mesh(geometry, mat2);
     wall1.position.y = 5;
     wall1.position.z = -13;
     scene.add(wall1);
     
     //壁2
-    var wall2 = new THREE.Mesh(geometry, material);
+    var wall2 = new THREE.Mesh(geometry, mat2);
     wall2.rotation.set( 0, -Math.PI/-1.2, 0 );
     wall2.position.x = -3.922;
     wall2.position.y = 5;
@@ -70,7 +75,7 @@
     scene.add(wall2);
     
     //壁3
-    var wall3 = new THREE.Mesh(geometry, material);
+    var wall3 = new THREE.Mesh(geometry, mat2);
     wall3.rotation.set( 0, -Math.PI/1.2, 0 );
     wall3.position.x = 3.922;
     wall3.position.y = 5;
