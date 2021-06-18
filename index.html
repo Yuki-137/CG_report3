@@ -48,6 +48,12 @@
     var mat2 = new THREE.MeshLambertMaterial();
     mat2.map = wall_texture;
     
+    //砲身のテクスチャ
+    var cannon_texture = textureLoader.load("metal.jpg");
+    var mat3 = new THREE.MeshLambertMaterial();
+    mat3.map = cannon_texture;
+    
+    
     //地面を作成
     var planeGeometry = new THREE.PlaneGeometry(50,50,50,50);
     var G = new THREE.Mesh(planeGeometry,mat);
@@ -81,6 +87,14 @@
     wall3.position.y = 5;
     wall3.position.z = -14.05;
     scene.add(wall3);
+    
+    //大砲系
+    //砲身（円柱）
+    var cylinderGeometry = new THREE.CylinderGeometry( 0.5, 0.5, 2, 30 );
+    var cannon = new THREE.Mesh(geometry, mat3);
+    scene.add(cannon);
+    
+    
 
 
     
