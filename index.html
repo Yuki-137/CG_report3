@@ -40,7 +40,7 @@
     
     //地面のテクスチャ
     var soil_texture = textureLoader.load("soil.jpg");
-    var mat = new THREE.MeshPhongMaterial();
+    var mat = new THREE.MeshLambertMaterial();
     mat.map = soil_texture;
     
     //地面を作成
