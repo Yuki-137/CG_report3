@@ -49,7 +49,7 @@
     mat2.map = wall_texture;
     
     //砲身のテクスチャ
-    var cannon_texture = textureLoader.load("metal.jpg");
+    var cannon_texture = textureLoader.load("metal_test.jpg");
     var mat3 = new THREE.MeshPhongMaterial();
     mat3.map = cannon_texture;
     
@@ -90,7 +90,7 @@
     
     //大砲系
     //砲身（円柱）
-    var cylinderGeometry = new THREE.CylinderGeometry( 1, 1, 3, 30 );
+    var cylinderGeometry = new THREE.CylinderGeometry( 1, 1, 3, 100 );
     var cannon = new THREE.Mesh(cylinderGeometry, mat3);
     cannon.position.y = 5;
     cannon.rotation.set( -Math.PI/1.7,0, 0 );
