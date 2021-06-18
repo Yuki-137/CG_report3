@@ -46,6 +46,7 @@
     //地面を作成
     var planeGeometry = new THREE.PlaneGeometry(50,50,50,50);
     var G = new THREE.Mesh(planeGeometry,mat);
+    plane.receiveShadow = true;
     G.rotation.set( -Math.PI/2, 0, 0 );
     G.position.set(0,0,0);
     scene.add( G );
