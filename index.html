@@ -103,11 +103,11 @@
     scene.add(cannon);
     
     //車輪
-    var WG = new THREE.CylinderGeometry( 0.5, 0.15, 1, 100 );
+    var WG = new THREE.CylinderGeometry( 0.6, 0.25, 1, 100 );
     var wheel = new THREE.Mesh(WG, mat4);
     wheel.position.x = 1.2;
     wheel.position.y = 5;
-    wheel.rotation.set( -Math.PI/2,0, 0 );
+    wheel.rotation.set( 0,-Math.PI/2, 0 );
     scene.add(wheel);
     
     
