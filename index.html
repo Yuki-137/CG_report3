@@ -83,9 +83,9 @@
     
     
     var  cannon_texture= [
-     new THREE.MeshPhongMaterial({color: 0x1abc9c}),
-     new THREE.MeshPhongMaterial({color: 0x3498db}),
-     new THREE.MeshPhongMaterial({color: 0x9b59b6}),
+     new THREE.MeshPhongMaterial({map:THREE.ImageUtils.loadTexture("metal.png")}),
+     new THREE.MeshPhongMaterial({map:THREE.ImageUtils.loadTexture("metal.png")}),
+     new THREE.MeshPhongMaterial({map:THREE.ImageUtils.loadTexture("grass.png")}),
     ];
     var mat3 = new THREE.MeshFaceMaterial(cannon_texture);
     //mat3.map = cannon_texture;
