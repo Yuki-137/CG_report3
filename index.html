@@ -47,9 +47,9 @@
     
     //壁のテクスチャ
     var wall_texture = textureLoader.load("stone_wall.jpg");
-    var mat2 = new THREE.MeshLambertMaterial();
-    mat2.bumpmap = wall_texture;
-    mat2.bumpscale=0.1;
+    //var mat2 = new THREE.MeshLambertMaterial();
+    wall_texture.bumpmap = wall_texture;
+    wall_texture.bumpscale=0.1;
     
     //砲身のテクスチャ
     var cannon_texture = textureLoader.load("metal.jpg");
