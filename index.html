@@ -228,8 +228,9 @@
       requestAnimationFrame(update);
       renderer.render(scene, camera);
   
-      // 箱を回転させる
-      sprite1.position.z +=0.01;
+      //砲弾発車
+      sprite1.position.y +=0.05;
+      sprite1.position.z +=0.1;
 
 
     };
