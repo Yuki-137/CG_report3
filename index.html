@@ -64,13 +64,13 @@
     var ball_texture = textureLoader.load("ball.png");
     
     //草1のテクスチャ
-    var grass = textureLoader.load("grass.png");
+    var grass_texture = textureLoader.load("grass.png");
     
     //草2のテクスチャ
-    var grass2 = textureLoader.load("grass2.png");
+    //var grass2_texture = textureLoader.load("grass2.png");
     
     //枯れた草のテクスチャ
-    //var Wgrass = textureLoader.load("Withered_grass.png");
+    //var Wgrass_texture = textureLoader.load("Withered_grass.png");
     
 
     
@@ -146,7 +146,7 @@
     
     
     //草1
-    const grass = new THREE.SpriteMaterial({ map: grass,});
+    const grass = new THREE.SpriteMaterial({ map: grass_texture,});
     const sprite2 = new THREE.Sprite(grass);
     sprite2.position.x = 0;
     sprite2.position.y = 0;
@@ -156,7 +156,7 @@
     
     /*
     //草2
-    const grass2 = new THREE.SpriteMaterial({ map: grass2,});
+    const grass2 = new THREE.SpriteMaterial({ map: grass2_texture,});
     const sprite3 = new THREE.Sprite(grass2);
     sprite3.position.x = 0;
     sprite3.position.y = 0;
@@ -165,7 +165,7 @@
     scene.add(sprite3);
     
     //枯れた草
-    const Wgrass = new THREE.SpriteMaterial({ map: Wgrass,});
+    const Wgrass = new THREE.SpriteMaterial({ map: Wgrass_texture,});
     const sprite4 = new THREE.Sprite(Wgrass);
     sprite4.position.x = 0;
     sprite4.position.y = 0;
