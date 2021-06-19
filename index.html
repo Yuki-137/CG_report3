@@ -49,8 +49,8 @@
     var wall_texture = textureLoader.load("stone_wall.jpg");
     var mat2 = new THREE.MeshLambertMaterial();
     mat2.map=wall_texture;
-    
-    var bump3 = textureLoader.load("sandstone_bump.jpg");
+    //壁のバンプマップ
+    var bump3 = textureLoader.load("stone_wall_bump.jpg");
     mat2.bumpmap = bump3;
     mat2.bumpscale=0.1;
     
