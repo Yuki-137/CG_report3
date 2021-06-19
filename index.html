@@ -100,7 +100,7 @@
     //砲身（円柱）
     var cylinderGeometry = new THREE.CylinderGeometry( 0.8, 1, 4, 100 );
     var cannon = new THREE.Mesh(cylinderGeometry, mat3);
-    cannon.position.y = 5;
+    cannon.position.y = 25;
     cannon.rotation.set( -Math.PI/1.7,0, 0 );
     scene.add(cannon);
     
@@ -108,7 +108,7 @@
     var WG = new THREE.CylinderGeometry( 0.8, 0.25, 1, 100 );
     var wheel = new THREE.Mesh(WG, mat4);
     wheel.position.x = 1.2;
-    wheel.position.y = 4.8;
+    wheel.position.y = 24.8;
     wheel.position.z = -0.8;
     wheel.rotation.set( 0,0,-Math.PI/2);
     scene.add(wheel);
@@ -116,7 +116,7 @@
     //車輪2
     var wheel2 = new THREE.Mesh(WG, mat4);
     wheel2.position.x = -1.2;
-    wheel2.position.y = 4.8;
+    wheel2.position.y = 24.8;
     wheel2.position.z = -0.8;
     wheel2.rotation.set( 0,0,-Math.PI/-2);
     scene.add(wheel2);
@@ -125,7 +125,7 @@
     const ball = new THREE.SpriteMaterial({ map: ball_texture,});
     const sprite1 = new THREE.Sprite(ball);
     sprite1.position.x = 0;
-    sprite1.position.y = 5;
+    sprite1.position.y = 25;
     sprite1.position.z = 0;
     sprite1.scale.set(5,5,5);
     scene.add(sprite1);
