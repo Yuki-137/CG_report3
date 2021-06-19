@@ -143,13 +143,11 @@
     sprite1.scale.set(5,5,5);
     scene.add(sprite1);
     
-    
-    
     //草1
     const grass = new THREE.SpriteMaterial({ map: grass_texture,});
     const sprite2 = new THREE.Sprite(grass);
     sprite2.position.x = -10;
-    sprite2.position.y = 0;
+    sprite2.position.y = 1;
     sprite2.position.z = 10;
     sprite2.scale.set(5,5,5);
     scene.add(sprite2);
@@ -158,7 +156,7 @@
     const grass2 = new THREE.SpriteMaterial({ map: grass2_texture,});
     const sprite3 = new THREE.Sprite(grass2);
     sprite3.position.x = 10;
-    sprite3.position.y = 0;
+    sprite3.position.y = 1;
     sprite3.position.z = 20;
     sprite3.scale.set(5,5,5);
     scene.add(sprite3);
@@ -167,7 +165,7 @@
     const Wgrass = new THREE.SpriteMaterial({ map: Wgrass_texture,});
     const sprite4 = new THREE.Sprite(Wgrass);
     sprite4.position.x = 15;
-    sprite4.position.y = 0;
+    sprite4.position.y = 1;
     sprite4.position.z = 15;
     sprite4.scale.set(5,5,5);
     scene.add(sprite4);
