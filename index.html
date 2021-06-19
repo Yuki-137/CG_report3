@@ -231,6 +231,9 @@
     sprite1.scale.set(2,2,2);
     scene.add(sprite1);
     
+    
+    //砲弾2
+    
     const sprite1_ball2 = new THREE.Sprite(ball);
     sprite1_ball2.position.x = 10;
     sprite1_ball2.position.y = 21;
@@ -238,19 +241,13 @@
     sprite1_ball2.scale.set(2,2,2);
     scene.add(sprite1_ball2);
     
+    //砲弾3
     const sprite1_ball3 = new THREE.Sprite(ball);
     sprite1_ball3.position.x = -10;
     sprite1_ball3.position.y = 21;
     sprite1_ball3.position.z = -13;
     sprite1_ball3.scale.set(2,2,2);
     scene.add(sprite1_ball3);
-    
-    const sprite1 = new THREE.Sprite(ball);
-    sprite1.position.x = 0;
-    sprite1.position.y = 21;
-    sprite1.position.z = -13;
-    sprite1.scale.set(2,2,2);
-    scene.add(sprite1);
     
     //草1
     const grass = new THREE.SpriteMaterial({ map: grass_texture,});
