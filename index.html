@@ -73,11 +73,20 @@
     
     
     
-    
+    /*
     //砲身のテクスチャ
     var cannon_texture = textureLoader.load("metal.jpg");
     var mat3 = new THREE.MeshPhongMaterial();
     mat3.map = cannon_texture;
+    */
+    var  cannon_texture= [
+     new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/metal.png")}),
+     new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/metal.png")}),
+     new THREE.MeshLambertMaterial({map:THREE.ImageUtils.loadTexture("img/metal.png")}),
+  ];
+    var mat3 = new THREE.MeshPhongMaterial();
+    mat3.map = cannon_texture;
+    
     
     //車輪のテクスチャ
     var wheel_texture = textureLoader.load("wood.jpg");
