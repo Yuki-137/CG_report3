@@ -78,8 +78,8 @@
 
     
     //地面を作成
-    var planeGeometry = new THREE.PlaneGeometry(50,50,50,50);
-    var G = new THREE.Mesh(planeGeometry,mat);
+    var circleGeometry = new THREE.CircleGeometry(50,50,50,50);
+    var G = new THREE.Mesh(circleGeometry,mat);
     G.receiveShadow = true;
     G.rotation.set( -Math.PI/2, 0, 0 );
     G.position.set(0,0,0);
@@ -229,7 +229,7 @@
       renderer.render(scene, camera);
   
       //砲弾発車
-      sprite1.position.y +=0.014;
+      sprite1.position.y +=0.013;
       sprite1.position.z +=0.05;
 
 
