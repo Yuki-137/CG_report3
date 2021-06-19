@@ -176,9 +176,9 @@
     //岩
     const rock = new THREE.SpriteMaterial({ map: rock_texture,});
     const sprite5 = new THREE.Sprite(rock);
-    sprite5.position.x = -5;
+    sprite5.position.x = -8;
     sprite5.position.y = 2;
-    sprite5.position.z = -1;
+    sprite5.position.z = -7;
     sprite5.scale.set(5,5,5);
     scene.add(sprite5);
     
@@ -229,7 +229,7 @@
       renderer.render(scene, camera);
   
       // 箱を回転させる
-      ball.position.z +=0.01;
+      sprite1.position.z +=0.01;
 
 
     };
