@@ -57,16 +57,16 @@
     */
     
     var textureLoader = new THREE.TextureLoader();  
-    var texture = textureLoader.load("stone_wall.jpg");
+    var texture = textureLoader.load("stone.jpg");
     var mat2 = new THREE.MeshPhongMaterial();
     mat2.map = texture;
   
-    /*
+    
     // バンプマップ読み込み
-    var bump = textureLoader.load("stone_wall_bump.jpg");
+    var bump = textureLoader.load("stone-bump.jpg");
     mat2.bumpMap = bump;
-    mat2.bumpscale = 100;
-    */
+    mat2.bumpscale = 0.5;
+    
     
     
     
