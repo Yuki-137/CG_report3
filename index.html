@@ -45,17 +45,20 @@
     var mat = new THREE.MeshLambertMaterial();
     mat.map = soil_texture;
     
-    /*
+    
     //壁のテクスチャ
     var wall_texture = textureLoader.load("stone_wall.jpg");
     var mat2 = new THREE.MeshLambertMaterial();
     mat2.map=wall_texture;
+    
+    /*
     //壁のバンプマップ
     var bump2 = textureLoader.load("stone_wall_bump.jpg");
     mat2.bumpmap = bump2;
-    mat2.bumpscale=1;
+    mat2.bumpscale=0.5;
     */
     
+    /*
     var textureLoader = new THREE.TextureLoader();  
     var texture = textureLoader.load("stone.jpg");
     var mat2 = new THREE.MeshPhongMaterial();
@@ -65,7 +68,8 @@
     // バンプマップ読み込み
     var bump = textureLoader.load("stone-bump.jpg");
     mat2.bumpMap = bump;
-    mat2.bumpscale = 100;
+    mat2.bumpscale = 0.5;
+    */
     
     
     
