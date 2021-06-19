@@ -159,10 +159,10 @@
     
     //砲身2
     var cannon2 = new THREE.Mesh(cylinderGeometry, mat3);
-    cannon2.position.x = 9;
+    cannon2.position.x = 8.5;
     cannon2.position.y = 21;
-    cannon2.position.z = -17;
-    cannon2.rotation.set( -Math.PI/1.7,-Math.PI/1.1, 0 );
+    cannon2.position.z = -15;
+    cannon2.rotation.set( -Math.PI/1.7,0, -Math.PI/1.5 );
     scene.add(cannon2);
     
     //車輪
@@ -176,7 +176,7 @@
     
     //車輪1-2
     var wheel_2 = new THREE.Mesh(WG, mat4);
-    wheel_2.position.x = 8.5;
+    wheel_2.position.x = 10;
     wheel_2.position.y = 20.8;
     wheel_2.position.z = -14.5;
     wheel_2.rotation.set( 0,0,-Math.PI/2);
