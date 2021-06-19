@@ -157,6 +157,14 @@
     cannon.rotation.set( -Math.PI/1.7,0, 0 );
     scene.add(cannon);
     
+    //砲身2
+    var cannon2 = new THREE.Mesh(cylinderGeometry, mat3);
+    cannon2.position.x = 21;
+    cannon2.position.y = 21;
+    cannon2.position.z = -18;
+    cannon2.rotation.set( -Math.PI/1.7,0, 0 );
+    scene.add(cannon2);
+    
     //車輪
     var WG = new THREE.CylinderGeometry( 0.8, 0.25, 1, 100 );
     var wheel = new THREE.Mesh(WG, mat4);
@@ -166,6 +174,14 @@
     wheel.rotation.set( 0,0,-Math.PI/2);
     scene.add(wheel);
     
+    //車輪1-2
+    var wheel_2 = new THREE.Mesh(WG, mat4);
+    wheel_2.position.x = 22.2;
+    wheel_2.position.y = 20.8;
+    wheel_2.position.z = -19.8;
+    wheel_2.rotation.set( 0,0,-Math.PI/2);
+    scene.add(wheel_2);
+    
     //車輪2
     var wheel2 = new THREE.Mesh(WG, mat4);
     wheel2.position.x = -1.2;
@@ -173,6 +189,14 @@
     wheel2.position.z = -14.8;
     wheel2.rotation.set( 0,0,-Math.PI/-2);
     scene.add(wheel2);
+    
+    //車輪2_2
+    var wheel2_2 = new THREE.Mesh(WG, mat4);
+    wheel2_2.position.x = 24.6;
+    wheel2_2.position.y = 20.8;
+    wheel2_2.position.z = -19.8;
+    wheel2_2.rotation.set( 0,0,-Math.PI/-2);
+    scene.add(wheel2_2);
     
     //砲弾
     const ball = new THREE.SpriteMaterial({ map: ball_texture,});
