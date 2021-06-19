@@ -186,15 +186,15 @@
     var wheel_2 = new THREE.Mesh(WG, mat4);
     wheel_2.position.x = 8.2;
     wheel_2.position.y = 20.8;
-    wheel_2.position.z = -15.5;
+    wheel_2.position.z = -15.7;
     wheel_2.rotation.set( 0,-Math.PI/1.2,-Math.PI/2);
     scene.add(wheel_2);
     
     //車輪1-3
     var wheel_3 = new THREE.Mesh(WG, mat4);
-    wheel_3.position.x = -8;
+    wheel_3.position.x = -8.2;
     wheel_3.position.y = 20.8;
-    wheel_3.position.z = -15.5;
+    wheel_3.position.z = -15.7;
     wheel_3.rotation.set( 0,Math.PI/1.2,Math.PI/2);
     scene.add(wheel_3);
     
@@ -224,6 +224,27 @@
     
     //砲弾
     const ball = new THREE.SpriteMaterial({ map: ball_texture,});
+    const sprite1 = new THREE.Sprite(ball);
+    sprite1.position.x = 0;
+    sprite1.position.y = 21;
+    sprite1.position.z = -13;
+    sprite1.scale.set(2,2,2);
+    scene.add(sprite1);
+    
+    const sprite1_ball2 = new THREE.Sprite(ball);
+    sprite1_ball2.position.x = 10;
+    sprite1_ball2.position.y = 21;
+    sprite1_ball2.position.z = -13;
+    sprite1_ball2.scale.set(2,2,2);
+    scene.add(sprite1_ball2);
+    
+    const sprite1_ball3 = new THREE.Sprite(ball);
+    sprite1_ball3.position.x = -10;
+    sprite1_ball3.position.y = 21;
+    sprite1_ball3.position.z = -13;
+    sprite1_ball3.scale.set(2,2,2);
+    scene.add(sprite1_ball3);
+    
     const sprite1 = new THREE.Sprite(ball);
     sprite1.position.x = 0;
     sprite1.position.y = 21;
@@ -316,6 +337,12 @@
       //砲弾発車
       sprite1.position.y +=0.013;
       sprite1.position.z +=0.05;
+      
+      sprite1_ball2.position.y +=0.013;
+      sprite1_ball2.position.z +=0.05;
+      
+      sprite1_ball3.position.y +=0.013;
+      sprite1_ball3.position.z +=0.05;
       
       //cannon2.rotation.z +=0.05;
 
