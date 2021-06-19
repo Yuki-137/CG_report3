@@ -101,7 +101,7 @@
     var cylinderGeometry = new THREE.CylinderGeometry( 0.8, 1, 4, 100 );
     var cannon = new THREE.Mesh(cylinderGeometry, mat3);
     cannon.position.y = 25;
-    wheel.position.z = -17;
+    cannon.position.z = -17;
     cannon.rotation.set( -Math.PI/1.7,0, 0 );
     scene.add(cannon);
     
